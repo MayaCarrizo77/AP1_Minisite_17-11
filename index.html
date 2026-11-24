@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon premier site</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fff8fa;
+        }
+
+        header, footer {
+            background-color: #f5e1e9;
+        }
+
+        h1, h2 {
+            color: #bd829b;
+        }
+
+        .btn {
+            background-color: #d9a9bc;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: #bd829b;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <a class="navbar-brand" href="#accueil">mon premier site</a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#accueil">accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#apropos">a propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galerie">galerie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- ACCUEIL -->
+        <section id="accueil" class="text-center p-5">
+            <div class="container">
+                <h1> mon premier site </h1>
+                <p>mon premier projet réalisé avec Bootstrap</p>
+                <a href="#galerie" class="btn">click</a>
+            </div>
+        </section>
+
+
+        <!-- A PROPOS -->
+        <section id="apropos" class="container text-center py-5">
+            <h2>a propos</h2>
+            <p>
+                la page est un exercice de l'ap du 10/11/2026
+            </p>
+        </section>
+
+
+        <!-- GALERIE -->
+        <section id="galerie" class="container py-5">
+            <h2 class="text-center mb-4">ma galerie</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/id/10/400/250"
+                            class="card-img-top" alt="Nature">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nature</h5>
+                            <p class="card-text"> image de la nature </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/id/20/400/250"
+                            class="card-img-top" alt="Ordinateur">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Technologie</h5>
+                            <p class="card-text"> image </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/id/30/400/250"
+                            class="card-img-top" alt="Paysage">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Voyage</h5>
+                            <p class="card-text"> image de voyage</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="contact" class="py-5">
+
+        <div class="container">
+            <h2 class="text-center mb-4">contact</h2>
+
+            <form class="mx-auto" style="max-width: 500px;">
+
+                <div class="mb-3">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" id="nom" class="form-control"
+                        placeholder="Votre nom" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" class="form-control"
+                        placeholder="Votre e-mail" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-control"
+                        rows="4" placeholder="Votre message"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Envoyer</button>
+
+            </form>
+
+            <p class="text-center mt-4 mb-0">
+                c 2026 - mon premier site
+            </p>
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
